@@ -13,24 +13,22 @@ const HomePage = () => {
 
   return (
     <>
-      <ChakraProvider theme={theme}>
-        <Flex
-          height="100vh"
-          direction="row"
-          width="100%"
-          color="alternativeColorText"
-        >
-          <LeftDesktopSection />
-          {showMainSection ? (
-            <>
-              <MainSection />
-              <MusicButton />
-            </>
-          ) : (
-            <RightSection setShowMainSection={setShowMainSection} />
-          )}
-        </Flex>
-      </ChakraProvider>
+      <Flex
+        height="100vh"
+        direction="row"
+        width="100%"
+        color="alternativeColorText"
+      >
+        <LeftDesktopSection />
+        {showMainSection ? (
+          <>
+            <MainSection />
+            <MusicButton />
+          </>
+        ) : (
+          <RightSection setShowMainSection={setShowMainSection} />
+        )}
+      </Flex>
     </>
   );
 };
