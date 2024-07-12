@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import { Box, Text, Button, Image, Heading } from '@chakra-ui/react';
 import { Fade } from 'react-awesome-reveal';
-import images from '../../utils/ImageArray.tsx'; // Import array images
+import images from '../../utils/ImageArray.tsx';
 
 const OpeningSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleNext = () => {
-    setCurrentSlide((prev) => (prev + 1) % images.length); // Menggunakan modulus untuk memastikan looping
+    setCurrentSlide((prev) => (prev + 1) % images.length);
   };
 
   const handlePrev = () => {
-    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length); // Menggunakan modulus untuk memastikan looping
+    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
   };
 
   return (
