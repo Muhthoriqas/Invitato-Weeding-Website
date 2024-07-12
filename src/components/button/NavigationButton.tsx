@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
   Button,
   Drawer,
@@ -10,7 +9,6 @@ import {
   DrawerCloseButton,
   useDisclosure,
   Text,
-  Divider,
   Heading,
   Box,
 } from '@chakra-ui/react';
