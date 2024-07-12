@@ -25,6 +25,13 @@ const WelcomeSection = () => {
     };
   }, []);
 
+  const handleScrollToBeginning = () => {
+    const openingSection = document.getElementById('opening_section');
+    if (openingSection) {
+      openingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Box height="100vh" position="relative" overflow="hidden">
       <Box className="slide">
@@ -99,25 +106,30 @@ const WelcomeSection = () => {
           color="alternativeColorText"
           _hover={{ background: 'transparent' }}
         >
-          <Text
-            fontFamily="poppins"
-            textTransform="uppercase"
-            marginRight="7px"
-            fontSize="sm"
-          >
-            Scroll To Begining
-          </Text>
-          <svg
-            stroke="currentColor"
-            fill="currentColor"
-            strokeWidth="0"
-            viewBox="0 0 448 512"
-            height="17"
-            width="17"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
-          </svg>
+          <Box>
+            <Button
+              background={'transparent'}
+              fontFamily="poppins"
+              textTransform="uppercase"
+              fontSize="sm"
+              color={'alternativeColorText'}
+              _hover={{ background: 'transparent' }}
+              onClick={handleScrollToBeginning}
+            >
+              <Text marginRight="7px">Scroll To Begining</Text>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth="0"
+                viewBox="0 0 448 512"
+                height="17"
+                width="17"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+              </svg>
+            </Button>
+          </Box>
         </Button>
       </Box>
     </Box>

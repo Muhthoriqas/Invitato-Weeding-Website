@@ -18,7 +18,12 @@ const OpeningSection = () => {
 
   return (
     <>
-      <Box color="black" padding="50px 0 100px" textAlign="center">
+      <Box
+        id="opening_section"
+        color="black"
+        padding="50px 0 100px"
+        textAlign="center"
+      >
         <Box
           fontFamily="poppins"
           letterSpacing="2px"
