@@ -28,31 +28,36 @@ const RightSection: React.FC<RightSectionProps> = ({ setShowMainSection }) => {
         height={'100vh'}
         position="relative"
         width="100%"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
+        marginLeft={{ base: '0', lg: 'calc(100% - 500px)' }}
       >
         <Box
           flex="none"
           width="100%"
-          maxWidth="500px"
           bgImage="linear-gradient(rgba(50, 48, 48, 0.5), rgba(50, 48, 48, 0.5)), url('/Main-Cover.jpg')"
           bgSize="cover"
           bgPosition="center"
           color="alternativeColorText"
           p={8}
-          height="100%"
-          padding="2rem"
-          textAlign="center"
-          marginLeft={{ base: '0', md: 'auto' }}
+          height={'100vh'}
+          padding={'2rem'}
+          marginLeft={{ base: '0', lg: 'auto' }}
         >
           <HeadingPoppins text="WEDDING ANNOUNCEMENT" margin="60px 0 8px 0" />
-          <Box marginTop="47px">
-            <HeadingButlerLight text="TIFFANY & JARED" />
-            <HeadingNewsreaderItalic text="#TImetoshaRE" />
-          </Box>
-          <Box marginTop="1rem">
-            <OpenButton handleClick={handleOpenClick} loading={loading} />
+          <Box
+            display={'flex'}
+            justifyContent={'center'}
+            height={'calc(90% - 130px)'}
+            alignItems={'center'}
+            flexDirection={'column'}
+          >
+            <Box textAlign={'center'} marginTop={'47px'}>
+              <HeadingButlerLight text="TIFFANY & JARED" />
+              <HeadingNewsreaderItalic text="#TImetoshaRE" />
+            </Box>
+
+            <Box>
+              <OpenButton handleClick={handleOpenClick} loading={loading} />
+            </Box>
           </Box>
         </Box>
       </Box>

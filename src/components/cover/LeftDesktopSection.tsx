@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 import HeadingPoppins from '../heading/HeadingPoppins';
 import HeadingButlerLight from '../heading/HeadingButlerLight';
 const LeftDesktopSection = () => {
-  const displayLeftSection = useBreakpointValue({ base: 'none', md: 'block' });
+  const displayLeftSection = useBreakpointValue({ base: 'none', lg: 'block' });
 
   return (
     <Box
@@ -12,7 +12,7 @@ const LeftDesktopSection = () => {
       left="0"
       top="0"
       height="100vh"
-      width={{ base: '100%', md: 'calc(100% - 500px)' }}
+      width={{ base: '100%', lg: 'calc(100% - 500px)' }}
       borderRightWidth="8px"
       borderRightStyle="solid"
       borderRightColor="blackAlpha.400"

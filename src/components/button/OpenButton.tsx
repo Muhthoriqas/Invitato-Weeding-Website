@@ -12,7 +12,7 @@ const OpenButton: React.FC<OpenButtonProps> = ({ handleClick, loading }) => {
       <Button
         className="animation-up-and-down"
         height={8}
-        marginTop={'35px'}
+        marginTop={{ base: '180px', md: '35px' }}
         lineHeight={'1.2'}
         outlineOffset={'2px'}
         outline={'2px solid transparent'}

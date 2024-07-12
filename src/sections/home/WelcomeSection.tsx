@@ -58,7 +58,7 @@ const WelcomeSection = () => {
         </Box>
         <Box
           flex="none"
-          width={{ base: '100%', md: '500px' }}
+          width={{ base: '100%', lg: '500px' }}
           bgSize="cover"
           bgPosition="center"
           color="alternativeColorText"
