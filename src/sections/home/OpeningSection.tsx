@@ -4,6 +4,7 @@ import { Box, Heading, Text, Button, Image } from '@chakra-ui/react';
 
 // Import Assets
 import images from '../../utils/ImageArray.tsx';
+import { Fade } from 'react-awesome-reveal';
 
 const OpeningSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -34,29 +35,33 @@ const OpeningSection = () => {
           <Text fontSize="12px">FAMILY & FRIENDS</Text>
         </Box>
         <Box>
-          <Heading
-            fontSize="32px"
-            padding="24px 0"
-            fontFamily="butler_normal"
-            fontWeight="500"
-          >
-            Welcome to
-            <br />
-            Tiffany & Jared’s
-            <br />
-            Wedding Website
-          </Heading>
+          <Fade duration={1000} direction="up" triggerOnce>
+            <Heading
+              fontSize="32px"
+              padding="24px 0"
+              fontFamily="butler_normal"
+              fontWeight="500"
+            >
+              Welcome to
+              <br />
+              Tiffany & Jared’s
+              <br />
+              Wedding Website
+            </Heading>
+          </Fade>
         </Box>
         <Box>
-          <Text
-            padding="0px 10% 24px"
-            fontSize="18px"
-            marginBottom="18px"
-            fontFamily="newsreader_italic"
-          >
-            Together with joyful hearts and the grace of God, we joyfully
-            announce the upcoming of our marriage.
-          </Text>
+          <Fade duration={1000} direction="up" triggerOnce>
+            <Text
+              padding="0px 10% 24px"
+              fontSize="18px"
+              marginBottom="18px"
+              fontFamily="newsreader_italic"
+            >
+              Together with joyful hearts and the grace of God, we joyfully
+              announce the upcoming of our marriage.
+            </Text>
+          </Fade>
         </Box>
 
         <Box position={'relative'}>
