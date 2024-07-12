@@ -3,13 +3,7 @@ import { useState } from 'react';
 import { Box, Heading, Text, Button, Image } from '@chakra-ui/react';
 
 // Import Assets
-const images = [
-  '../src/assets/images/Slideshow/Slideshow-Cover-1.jpg',
-  '../src/assets/images/Slideshow/Slideshow-Cover-2.jpg',
-  '../src/assets/images/Slideshow/Slideshow-Cover-3.jpg',
-  '../src/assets/images/Slideshow/Slideshow-Cover-4.jpg',
-  '../src/assets/images/Slideshow/Slideshow-Cover-5.jpg',
-];
+import images from '../../utils/ImageArray.tsx';
 
 const OpeningSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
