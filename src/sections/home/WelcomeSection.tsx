@@ -80,7 +80,7 @@ const WelcomeSection = () => {
               <HeadingNewsreaderItalic text="#TImetoshaRE" />
             </Box>
           </Box>
-          <Button
+          <Box
             appearance="none"
             userSelect="none"
             position="relative"
@@ -132,7 +132,7 @@ const WelcomeSection = () => {
                 </svg>
               </Button>
             </Box>
-          </Button>
+          </Box>
         </Box>
       </Box>
     </Fade>

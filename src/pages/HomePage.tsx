@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Flex } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 
 import LeftDesktopSection from '../components/cover/LeftDesktopSection';
 import MainSection from '../sections/home/MainSection';
-import MusicButton from '../components/button/MusicButton';
 import RightSection from '../components/cover/RightSection';
+import MusicButton from '../components/button/MusicButton';
+import NavigationButton from '../components/button/NavigationButton';
 
 const HomePage = () => {
   const [showMainSection, setShowMainSection] = useState(false);
@@ -21,7 +22,12 @@ const HomePage = () => {
         {showMainSection ? (
           <>
             <MainSection />
-            <MusicButton />
+            <Box position="fixed" bottom="12px" left="12px" zIndex="11">
+              <Box>
+                <NavigationButton />
+                <MusicButton />
+              </Box>
+            </Box>
           </>
         ) : (
           <RightSection setShowMainSection={setShowMainSection} />
