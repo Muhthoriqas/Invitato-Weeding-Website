@@ -32,7 +32,7 @@ const RightSection: React.FC<RightSectionProps> = ({ setShowMainSection }) => {
         <Box
           flex="none"
           width={{ base: '100%', md: '500px' }}
-          bgImage="linear-gradient(rgba(50, 48, 48, 0.5), rgba(50, 48, 48, 0.5)), url('../../assets/images/Main-Cover.jpg')"
+          bgImage="linear-gradient(rgba(50, 48, 48, 0.5), rgba(50, 48, 48, 0.5)), url('../../../public/Main-Cover.jpg')"
           bgSize="cover"
           bgPosition="center"
           color="alternativeColorText"
