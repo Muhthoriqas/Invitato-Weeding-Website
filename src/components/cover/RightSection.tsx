@@ -1,4 +1,4 @@
-import { Box, Button } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import HeadingPoppins from '../heading/HeadingPoppins';
 import HeadingNewsreaderItalic from '../heading/HeadingNewsreaderItalic';
 import HeadingButlerLight from '../heading/HeadingButlerLight';
