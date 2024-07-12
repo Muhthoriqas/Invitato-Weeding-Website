@@ -16,7 +16,7 @@ const LeftDesktopSection = () => {
       borderRightWidth="8px"
       borderRightStyle="solid"
       borderRightColor="blackAlpha.400"
-      bgImage="linear-gradient(rgba(50, 48, 48, 0.5), rgba(50, 48, 48, 0.5)), url('../../../public/Left-Desktop.jpg')"
+      bgImage="linear-gradient(rgba(50, 48, 48, 0.5), rgba(50, 48, 48, 0.5)), url('/Left-Desktop.jpg')"
       bgSize="cover"
       bgPosition="center"
       color="alternativeColorText"
