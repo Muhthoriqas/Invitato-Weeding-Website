@@ -20,6 +20,7 @@
     "react-loading": "^2.0.3"
   },
   "devDependencies": {
+    "@types/fslightbox-react": "^1.7.7",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
@@ -28,6 +29,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "fslightbox-react": "^1.7.6",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
   }

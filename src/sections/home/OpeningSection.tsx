@@ -3,8 +3,14 @@ import { Box, Text, Button, Image, Heading } from '@chakra-ui/react';
 import { Fade } from 'react-awesome-reveal';
 import images from '../../utils/ImageArray.tsx';
 import { ArrowLeftIcon, ArrowRightIcon } from '../../assets/icons/Icon.tsx';
+import FsLightbox from 'fslightbox-react';
+
 const OpeningSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [lightboxController, setLightboxController] = useState({
+    toggler: false,
+    slide: 1,
+  });
 
   const handleNext = () => {
     setCurrentSlide((prev) => (prev + 1) % images.length);
@@ -12,6 +18,13 @@ const OpeningSection = () => {
 
   const handlePrev = () => {
     setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  const handleSlideClick = (index: number) => {
+    setLightboxController({
+      toggler: !lightboxController.toggler,
+      slide: index + 1,
+    });
   };
 
   return (
@@ -76,12 +89,7 @@ const OpeningSection = () => {
             flexFlow={'wrap'}
             padding={'0px'}
           >
-            <Box
-              display={'flex'}
-              boxSizing="border-box"
-              outline={'none'}
-              style={{ transition: 'transform 1000ms linear 0ms' }}
-            >
+            <Box display={'flex'} boxSizing="border-box" outline={'none'}>
               {images.map((src, index) => (
                 <Box
                   key={index}
@@ -89,6 +97,8 @@ const OpeningSection = () => {
                   height={'390px'}
                   transform={`translateX(-${currentSlide * 280}px)`}
                   transition="transform 1.2s ease-in-out"
+                  style={{ cursor: 'pointer', marginBottom: '20px' }}
+                  onClick={() => handleSlideClick(index)}
                 >
                   <Image
                     src={src}
@@ -159,6 +169,11 @@ const OpeningSection = () => {
             </Box>
           </Button>
         </Box>
+        <FsLightbox
+          toggler={lightboxController.toggler}
+          sources={images}
+          slide={lightboxController.slide}
+        />
       </Box>
     </Box>
   );
