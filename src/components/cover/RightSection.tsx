@@ -27,38 +27,32 @@ const RightSection: React.FC<RightSectionProps> = ({ setShowMainSection }) => {
       <Box
         height={'100vh'}
         position="relative"
-        marginLeft={{ base: '0', md: 'calc(100% - 500px)' }}
+        width="100%"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
       >
         <Box
           flex="none"
-          width={{ base: '100%', md: '500px' }}
+          width="100%"
+          maxWidth="500px"
           bgImage="linear-gradient(rgba(50, 48, 48, 0.5), rgba(50, 48, 48, 0.5)), url('/Main-Cover.jpg')"
           bgSize="cover"
           bgPosition="center"
           color="alternativeColorText"
           p={8}
-          height={'100vh'}
-          padding={'2rem'}
+          height="100%"
+          padding="2rem"
+          textAlign="center"
+          marginLeft={{ base: '0', md: 'auto' }}
         >
-          <HeadingPoppins
-            text="WEDDING ANNOUNCEMENT"
-            margin="60px 0 8px 0"
-          ></HeadingPoppins>
-          <Box
-            display={'flex'}
-            justifyContent={'center'}
-            height={'calc(90% - 130px);'}
-            alignItems={'center'}
-            flexDirection={'column'}
-          >
-            <Box textAlign={'center'} marginTop={'47px'}>
-              <HeadingButlerLight text="TIFFANY & JARED" />
-              <HeadingNewsreaderItalic text="#TImetoshaRE" />
-            </Box>
-
-            <Box>
-              <OpenButton handleClick={handleOpenClick} loading={loading} />
-            </Box>
+          <HeadingPoppins text="WEDDING ANNOUNCEMENT" margin="60px 0 8px 0" />
+          <Box marginTop="47px">
+            <HeadingButlerLight text="TIFFANY & JARED" />
+            <HeadingNewsreaderItalic text="#TImetoshaRE" />
+          </Box>
+          <Box marginTop="1rem">
+            <OpenButton handleClick={handleOpenClick} loading={loading} />
           </Box>
         </Box>
       </Box>

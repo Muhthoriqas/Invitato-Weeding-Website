@@ -117,8 +117,16 @@ const WelcomeSection = () => {
                 color={'alternativeColorText'}
                 _hover={{ background: 'transparent' }}
                 onClick={handleScrollToBeginning}
+                outline={'transparent solid 2px'}
+                lineHeight={'1.2'}
+                height={10}
+                marginLeft={'auto'}
+                alignItems={'center'}
+                padding={'0px'}
               >
-                <Text marginRight="7px">Scroll To Begin</Text>
+                <Text marginRight="7px" fontSize={'sm'}>
+                  Scroll To Begin
+                </Text>
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
