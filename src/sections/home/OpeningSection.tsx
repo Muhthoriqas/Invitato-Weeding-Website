@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Box, Text, Button, Image, Heading } from '@chakra-ui/react';
 import { Fade } from 'react-awesome-reveal';
 import images from '../../utils/ImageArray.tsx';
-
+import { ArrowLeftIcon, ArrowRightIcon } from '../../assets/icons/Icon.tsx';
 const OpeningSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -127,23 +127,7 @@ const OpeningSection = () => {
               height="100%"
               fontSize="24px"
             >
-              <svg
-                stroke="currentColor"
-                fill="none"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                color="bgSecondary"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                ></path>
-              </svg>
+              <ArrowLeftIcon />
             </Box>
           </Button>
           <Button
@@ -171,24 +155,7 @@ const OpeningSection = () => {
               height="100%"
               fontSize="24px"
             >
-              <svg
-                stroke="currentColor"
-                fill="none"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                color="var(--chakra-colors-secondaryColorText)"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-                style={{ color: 'var(--chakra-colors-secondaryColorText)' }}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M7 16l-4-4m0 0l4-4m-4 4h18"
-                ></path>
-              </svg>
+              <ArrowRightIcon />
             </Box>
           </Button>
         </Box>
