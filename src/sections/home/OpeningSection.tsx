@@ -7,11 +7,11 @@ const OpeningSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleNext = () => {
-    setCurrentSlide((prev) => (prev + 1) % images.length);
+    setCurrentSlide((prev) => (prev + 1) % images.length); // Menggunakan modulus untuk memastikan looping
   };
 
   const handlePrev = () => {
-    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length); // Menggunakan modulus untuk memastikan looping
   };
 
   return (
@@ -109,7 +109,6 @@ const OpeningSection = () => {
             right="2.5rem"
             bottom="-50px"
             alignSelf="center"
-            background="var(--chakra-colors-bgSecondary)"
             border="1px solid rgb(26, 27, 29)"
             borderRadius={'0px'}
             cursor="pointer"
