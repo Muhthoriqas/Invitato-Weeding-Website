@@ -6,7 +6,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from '../../assets/icons/Icon.tsx';
 import FsLightbox from 'fslightbox-react';
 
 const OpeningSection = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(7);
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
     slide: 1,
