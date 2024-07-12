@@ -118,7 +118,7 @@ const WelcomeSection = () => {
                 _hover={{ background: 'transparent' }}
                 onClick={handleScrollToBeginning}
               >
-                <Text marginRight="7px">Scroll To Begining</Text>
+                <Text marginRight="7px">Scroll To Begin</Text>
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
