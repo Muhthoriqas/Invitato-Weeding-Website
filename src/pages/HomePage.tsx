@@ -1,12 +1,10 @@
 import { useState } from 'react';
-import { ChakraProvider, Flex } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
 import LeftDesktopSection from '../components/cover/LeftDesktopSection';
 import MainSection from '../sections/home/MainSection';
 import MusicButton from '../components/button/MusicButton';
 import RightSection from '../components/cover/RightSection';
-
-import theme from '../theme';
 
 const HomePage = () => {
   const [showMainSection, setShowMainSection] = useState(false);
