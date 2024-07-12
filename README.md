@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+### 🌟 Invitato Wedding Website 🌟
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Created by Muhammad Thoriq Ali Said**
 
-Currently, two official plugins are available:
+#### 📜 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Invitato Wedding Website is a beautiful and elegant application built using React with TypeScript and Chakra UI. It serves as a personalized platform for Tiffany & Jared’s wedding, providing a seamless experience for guests to explore wedding details, RSVP, and celebrate their special day.
+    
+#### 🚀 Technologies Used
 
-## Expanding the ESLint configuration
+*   **React:** Frontend framework for building dynamic user interfaces.
+    
+*   **TypeScript:** Enhances code quality and developer productivity with typed JavaScript.
+    
+*   **Chakra UI:** Provides a modular and accessible component library for consistent styling and responsive design.
+    
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+#### 🌐 Deployment
 
-- Configure the top-level `parserOptions` property like this:
+Invitato Wedding Website is deployed using Vercel and is accessible at https://invitato-weeding-website-thoriqas.vercel.app, ensuring widespread access for guests to engage with wedding updates and details.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+#### 📝 How to Use
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1.  ```git clone https://github.com/Muhthoriqas/Invitato-Weeding-Website.git```
+2.  ```cd Invitato-Weeding-Website```
+3.  ```code .```
+4.  ```npm install```
+5.  ```npm run dev```
+6.  ```Open http://localhost:5173```
+    
