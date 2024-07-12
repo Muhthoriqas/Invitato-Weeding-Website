@@ -1,9 +1,13 @@
-import { Box, Button, Text } from '@chakra-ui/react';
-import HeadingPoppins from './heading/HeadingPoppins';
+// Import Package & Library
 import { useEffect, useState } from 'react';
-import HeadingButlerLight from './heading/HeadingButlerLight';
-import HeadingNewsreaderItalic from './heading/HeadingNewsreaderItalic';
+import { Box, Button, Text } from '@chakra-ui/react';
 
+// Import Components
+import HeadingPoppins from '../../components/heading/HeadingPoppins';
+import HeadingButlerLight from '../../components/heading/HeadingButlerLight';
+import HeadingNewsreaderItalic from '../../components/heading/HeadingNewsreaderItalic';
+
+// Import Assets
 const images = [
   '../src/assets/images/Slideshow/Slideshow-Cover-1.jpg',
   '../src/assets/images/Slideshow/Slideshow-Cover-2.jpg',

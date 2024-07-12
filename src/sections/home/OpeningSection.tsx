@@ -1,6 +1,8 @@
+// Import Package & Library
 import { useState } from 'react';
 import { Box, Heading, Text, Button, Image } from '@chakra-ui/react';
 
+// Import Assets
 const images = [
   '../src/assets/images/Slideshow/Slideshow-Cover-1.jpg',
   '../src/assets/images/Slideshow/Slideshow-Cover-2.jpg',

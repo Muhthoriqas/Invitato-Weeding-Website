@@ -1,4 +1,7 @@
+// Import Package & Library
 import { Box } from '@chakra-ui/react';
+
+// Import Sections
 import OpeningSection from './OpeningSection';
 import WelcomeSection from './WelcomeSection';
 
