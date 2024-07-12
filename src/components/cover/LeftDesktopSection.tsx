@@ -1,10 +1,4 @@
-import {
-  Box,
-  Text,
-  useBreakpointValue,
-  VStack,
-  Heading,
-} from '@chakra-ui/react';
+import { Box, Text, useBreakpointValue, VStack } from '@chakra-ui/react';
 
 import { Fade } from 'react-awesome-reveal';
 import HeadingPoppins from '../heading/HeadingPoppins';
