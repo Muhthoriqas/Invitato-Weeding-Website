@@ -9,9 +9,7 @@ const MusicButton = () => {
     if (audioRef.current) {
       audioRef.current
         .play()
-        .then(() => {
-          console.log('Audio is playing');
-        })
+        .then(() => {})
         .catch((error) => {
           console.error('Failed to play audio:', error);
         });
@@ -27,7 +25,6 @@ const MusicButton = () => {
           audioRef.current.play();
         }
         setIsPlaying(!isPlaying);
-        console.log('Playback state:', isPlaying);
       } catch (error) {
         console.error('Failed to play/pause audio:', error);
       }
