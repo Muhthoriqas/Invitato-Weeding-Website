@@ -13,11 +13,17 @@ const OpeningSection = () => {
   });
 
   const handleNext = () => {
-    setCurrentSlide((prev) => (prev + 1) % images.length);
+    setCurrentSlide((prev) => prev - 1);
+    if (currentSlide <= 0) {
+      setCurrentSlide(images.length - 2);
+    }
   };
 
   const handlePrev = () => {
-    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+    setCurrentSlide((prev) => prev + 1);
+    if (currentSlide >= images.length - 2) {
+      setCurrentSlide(0);
+    }
   };
 
   const handleSlideClick = (index: number) => {
@@ -72,6 +78,7 @@ const OpeningSection = () => {
           </Text>
         </Fade>
       </Box>
+
       <Box position="relative">
         <Box
           display={'flex'}
@@ -84,7 +91,7 @@ const OpeningSection = () => {
           <Box
             overflow="hidden"
             width="100%"
-            maxWidth="560px"
+            maxWidth="840px"
             display="flex"
             flexFlow={'wrap'}
             padding={'0px'}
@@ -99,6 +106,7 @@ const OpeningSection = () => {
                   transition="transform 1.2s ease-in-out"
                   style={{ cursor: 'pointer', marginBottom: '20px' }}
                   onClick={() => handleSlideClick(index)}
+                  margin={'0'}
                 >
                   <Image
                     src={src}
