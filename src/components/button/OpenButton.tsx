@@ -1,6 +1,12 @@
-import { Button } from '@chakra-ui/react';
+import { Button, Box } from '@chakra-ui/react';
+import ReactLoading from 'react-loading';
 
-const OpenButton = ({ handleClick }: any) => {
+interface OpenButtonProps {
+  handleClick: () => void;
+  loading: boolean;
+}
+
+const OpenButton: React.FC<OpenButtonProps> = ({ handleClick, loading }) => {
   return (
     <>
       <Button
@@ -14,22 +20,33 @@ const OpenButton = ({ handleClick }: any) => {
         justifyContent={'center'}
         display={'inline-flex'}
         whiteSpace={'nowrap'}
-        minW={8}
+        width={'120px'}
         padding={'0 2.4rem'}
         fontStyle={'italic'}
         fontWeight={'400'}
-        background={'gray.100'}
         paddingInlineEnd={3}
         borderRadius={'0px'}
         border={'1px solid #1A1B1D'}
-        backgroundColor={'bgSecondary'}
+        background={'gray.100'}
+        opacity={loading ? '0.5' : '1'}
         color={'secondaryColorText'}
         fontFamily={'newsreader_light'}
         fontSize={'lg'}
         onClick={handleClick}
         zIndex="20"
       >
-        Open
+        {loading ? (
+          <Box display="flex" alignItems="center">
+            <ReactLoading
+              type="spin"
+              color="#000"
+              width={'25px'}
+              height={'25px'}
+            />
+          </Box>
+        ) : (
+          'Open'
+        )}
       </Button>
     </>
   );

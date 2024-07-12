@@ -1,4 +1,6 @@
 import { Box } from '@chakra-ui/react';
+import { useState } from 'react';
+
 import HeadingPoppins from '../heading/HeadingPoppins';
 import HeadingNewsreaderItalic from '../heading/HeadingNewsreaderItalic';
 import HeadingButlerLight from '../heading/HeadingButlerLight';
@@ -9,8 +11,14 @@ interface RightSectionProps {
 }
 
 const RightSection: React.FC<RightSectionProps> = ({ setShowMainSection }) => {
+  const [loading, setLoading] = useState(false);
+
   const handleOpenClick = () => {
-    setShowMainSection(true);
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      setShowMainSection(true);
+    }, 1800);
   };
 
   return (
@@ -49,7 +57,7 @@ const RightSection: React.FC<RightSectionProps> = ({ setShowMainSection }) => {
             </Box>
 
             <Box>
-              <OpenButton handleClick={handleOpenClick}></OpenButton>
+              <OpenButton handleClick={handleOpenClick} loading={loading} />
             </Box>
           </Box>
         </Box>
